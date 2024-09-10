@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import "./App.css";
+
+import { Routes, Route } from "react-router-dom";
+
+import {
+  TimerContextProvider,
+  UserContextProvider,
+  ValterTokenProvider,
+} from "./Context/Context";
+import { ValterHamster } from "./Components/ValterHamster/ValterHamster";
+import { Header } from "./Components/Header/Header";
+import Login from "./Pages/Login";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TimerContextProvider>
+      <ValterTokenProvider>
+        <UserContextProvider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/logged" element={<ValterHamster />} />
+            <Route path="*" element={<h1>404</h1>} />
+          </Routes>
+        </UserContextProvider>
+      </ValterTokenProvider>
+    </TimerContextProvider>
   );
 }
 

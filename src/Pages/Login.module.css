@@ -1,0 +1,21 @@
+.main {
+  top: 50px;
+  margin: 0 auto;
+  border: 1px black solid;
+  width: 350px;
+  -webkit-box-shadow: 10px 6px 32px 0px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 10px 6px 32px 0px rgba(0, 0, 0, 0.53);
+  box-shadow: 10px 6px 32px 0px rgba(0, 0, 0, 0.53);
+}
+
+.nightThemeCard {
+  color: aliceblue;
+  background-color: #283779;
+  border: 1px rgba(255, 255, 255, 0.311) solid;
+}
+
+.nightTheme {
+  background-color: #2d2d31;
+  color: white;
+  height: 100vh;
+}

@@ -1,0 +1,41 @@
+.root {
+  background: rgb(94, 190, 219);
+  background: linear-gradient(
+    180deg,
+    rgba(94, 190, 219, 1) 32%,
+    rgba(163, 227, 252, 1) 100%
+  );
+  height: 100px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nigthTheme {
+  background: rgb(20, 74, 91);
+  background: linear-gradient(
+    180deg,
+    rgba(20, 74, 91, 1) 32%,
+    rgba(63, 142, 172, 1) 100%
+  );
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+}
+
+.wrp {
+  min-width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrp1 {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
