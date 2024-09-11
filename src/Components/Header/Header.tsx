@@ -1,4 +1,5 @@
 import { FC, useContext } from "react";
+
 import {
   ThemeContext,
   TimerContext,

@@ -18,6 +18,11 @@
 }
 
 .nightTheme {
-  background-color: #2d2d31;
+  background: rgb(170, 210, 218);
+  background: linear-gradient(
+    180deg,
+    rgba(170, 210, 218, 1) 13%,
+    rgba(21, 33, 37, 1) 93%
+  );
   color: white;
 }

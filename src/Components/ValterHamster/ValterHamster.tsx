@@ -6,11 +6,13 @@ import valter3 from "../../UI/3.png";
 
 import styles from "./ValterHamster.module.css";
 import { Balance } from "../Balance/Balance";
+
 import {
   ThemeContext,
   TimerContext,
   ValterTokenContext,
 } from "../../Context/Context";
+
 import { Timer } from "../Timer/Timer";
 import { CoinMove } from "./CoinMove";
 
