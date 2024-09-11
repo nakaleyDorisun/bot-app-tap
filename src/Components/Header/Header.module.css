@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .nigthTheme {
@@ -22,19 +22,26 @@
   );
 }
 
-.logo {
-  text-decoration: none;
-  color: white;
+.nigthThemeName {
+  color: aliceblue;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.logOut {
+  font-size: 18px;
 }
 
 .wrp {
-  min-width: 200px;
+  min-width: 150px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .wrp1 {
-  width: 300px;
+  width: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;

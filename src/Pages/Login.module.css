@@ -2,7 +2,7 @@
   top: 50px;
   margin: 0 auto;
   border: 1px black solid;
-  width: 350px;
+  max-width: 300px;
   -webkit-box-shadow: 10px 6px 32px 0px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: 10px 6px 32px 0px rgba(0, 0, 0, 0.53);
   box-shadow: 10px 6px 32px 0px rgba(0, 0, 0, 0.53);

@@ -9,13 +9,13 @@ export const Balance: FC = ({}) => {
   const valterTokenContext = useContext(ValterTokenContext);
   return (
     <div className={styles.wrpBalance}>
+      <img src={coin} className={styles.coinStatic} />
       <p
         className={styles.balance}
         style={themeContext?.nigthTheme ? { color: "white" } : {}}
       >
-        Вальтер токен: {valterTokenContext?.valterToken}
+        $VLTR: {valterTokenContext?.valterToken}
       </p>
-      <img src={coin} className={styles.coinStatic} />
     </div>
   );
 };

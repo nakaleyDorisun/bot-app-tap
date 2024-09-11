@@ -32,9 +32,6 @@ export const Timer: FC = () => {
   useEffect(() => {
     if (timerContext && timerContext?.seconds <= 0) {
       valterTokenContext?.setValterToken((p) => p - 1);
-      return () => {
-        valterTokenContext?.setValterToken(0);
-      };
     }
   }, [timerContext?.seconds]);
 

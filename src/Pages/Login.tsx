@@ -33,7 +33,7 @@ const Login = () => {
   return (
     <div className={nightTogglerClass}>
       <Card
-        title="Please log in Valter Hamster"
+        title="Please log in"
         extra={<a href="#">Sing in</a>}
         style={themeContext?.nigthTheme ? { color: "white" } : {}}
         className={nightTogglerClassCard}
@@ -48,8 +48,10 @@ const Login = () => {
           type="text"
           value={loginValue}
           onChange={(e) => {
-            setUserNameWarning(false);
-            setLoginValue(e.target.value);
+            if (e.target.value.length <= 8) {
+              setUserNameWarning(false);
+              setLoginValue(e.target.value);
+            }
           }}
         />
         <p>Password</p>

@@ -18,24 +18,29 @@ export const Header: FC = () => {
   const themeContext = useContext(ThemeContext);
   const userContext = useContext(UserContext);
   const valterTokenContext = useContext(ValterTokenContext);
+
   const nightTogglerClass = themeContext?.nigthTheme
     ? styles.root + " " + styles.nigthTheme
     : styles.root;
 
+  const nightTogglerClassName = themeContext?.nigthTheme
+    ? styles.name + " " + styles.nigthThemeName
+    : styles.name;
+
+  const nightTogglerClassLogOut = themeContext?.nigthTheme
+    ? styles.logOut + " " + styles.nigthThemeName
+    : styles.logOut;
+
   return (
     <header className={nightTogglerClass}>
       <div className={styles.wrp1}>
-        <div>{userContext?.user.login}</div>
-
+        <div className={nightTogglerClassName}>{userContext?.user.login}</div>
         <Balance />
       </div>
       <div className={styles.wrp}>
         <NightModelIcon />
         <SwitchTheme />
-        <Link
-          style={{ textDecoration: "none", color: "white", fontSize: 24 }}
-          to="/"
-        >
+        <Link to="/" className={nightTogglerClassLogOut}>
           <p
             onClick={() => {
               valterTokenContext?.setValterToken(0);
