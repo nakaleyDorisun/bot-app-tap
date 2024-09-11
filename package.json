@@ -2,7 +2,6 @@
   "name": "context",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://nakaleydorisun.github.io/bot-app-tap",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
