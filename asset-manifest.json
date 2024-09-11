@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/bot-app-tap/static/css/main.32cab291.css",
-    "main.js": "/bot-app-tap/static/js/main.c804a1b2.js",
+    "main.js": "/bot-app-tap/static/js/main.e61b3aba.js",
     "static/media/3.png": "/bot-app-tap/static/media/3.49f1c4b7224e1533dfa6.png",
     "static/media/2.png": "/bot-app-tap/static/media/2.5126aafe8b3f5fb244f8.png",
     "static/media/1.png": "/bot-app-tap/static/media/1.4ea8c171bff85b6bab40.png",
     "static/media/night-icon1.png": "/bot-app-tap/static/media/night-icon1.6ca9af1ef463e73d8def.png",
     "index.html": "/bot-app-tap/index.html",
     "main.32cab291.css.map": "/bot-app-tap/static/css/main.32cab291.css.map",
-    "main.c804a1b2.js.map": "/bot-app-tap/static/js/main.c804a1b2.js.map"
+    "main.e61b3aba.js.map": "/bot-app-tap/static/js/main.e61b3aba.js.map"
   },
   "entrypoints": [
     "static/css/main.32cab291.css",
-    "static/js/main.c804a1b2.js"
+    "static/js/main.e61b3aba.js"
   ]
 }
