@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
@@ -19,8 +18,8 @@ function App() {
         <UserContextProvider>
           <Header />
           <Routes>
-            <Route path="/bot-app-tap/" element={<Login />} />
-            <Route path="/bot-app-tap/logged" element={<ValterHamster />} />
+            <Route path="/" element={<Login />} />
+            <Route path="/logged" element={<ValterHamster />} />
             <Route path="*" element={<h1>404</h1>} />
           </Routes>
         </UserContextProvider>
