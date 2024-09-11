@@ -19,14 +19,8 @@ function App() {
         <UserContextProvider>
           <Header />
           <Routes>
-            <Route
-              path="https://nakaleydorisun.github.io/bot-app-tap"
-              element={<Login />}
-            />
-            <Route
-              path="https://nakaleydorisun.github.io/bot-app-tap/logged"
-              element={<ValterHamster />}
-            />
+            <Route path="bot-app-tap/" element={<Login />} />
+            <Route path="/logged" element={<ValterHamster />} />
             <Route path="*" element={<h1>404</h1>} />
           </Routes>
         </UserContextProvider>
