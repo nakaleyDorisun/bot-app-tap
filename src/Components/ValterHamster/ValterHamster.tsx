@@ -3,6 +3,7 @@ import { FC, useContext, useEffect, useState } from "react";
 import valter1 from "../../UI/1.png";
 import valter2 from "../../UI/2.png";
 import valter3 from "../../UI/3.png";
+import { fetchBtc } from "../../fetch/fetchBtc";
 
 import styles from "./ValterHamster.module.css";
 import { Balance } from "../Balance/Balance";
@@ -24,6 +25,18 @@ export const ValterHamster: FC = () => {
   const timerContext = useContext(TimerContext);
   const valterTokenContext = useContext(ValterTokenContext);
   const [valetToggle, setValterToggle] = useState(false);
+
+  //////////////
+  const [price, setPrice] = useState(0);
+
+  // useEffect(() => {
+  //   const fetchPrice = fetchBtc();
+  //   if (fetchPrice) {
+  //     setPrice(fetchPrice);
+  //   }
+  // }, []);
+
+  //////////////
 
   const valterToggleHandler = () => {
     timerContext?.setSeconds(12);

@@ -1,6 +1,18 @@
 body {
   margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
 
+  max-width: 100%;
+  background: rgb(215, 248, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(215, 248, 255, 1) 13%,
+    rgba(159, 204, 219, 1) 93%
+  );
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -8,4 +20,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+a {
+  text-decoration: none;
+  transition: 200ms;
+  color: black;
+}
+a:hover {
+  color: rgb(130, 110, 21);
 }
